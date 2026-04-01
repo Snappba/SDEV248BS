@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://buwymi1eftxk5"]
+
+[ext_resource type="Texture2D" uid="uid://y2vjojq8mea3" path="res://dolla.png" id="1_c701k"]
+[ext_resource type="Script" uid="uid://c0keptdx1vc1k" path="res://dolla.gd" id="2_w7pd1"]
+[ext_resource type="Script" uid="uid://c0i8pxojhtn6i" path="res://dolla_pickup.gd" id="3_w7pd1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c701k"]
+size = Vector2(14, 31)
+
+[node name="DollaRoot" type="Node2D" unique_id=1006344033]
+
+[node name="Dolla" type="CharacterBody2D" parent="." unique_id=981676984]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("2_w7pd1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Dolla" unique_id=61708477]
+texture = ExtResource("1_c701k")
+
+[node name="Area2D" type="Area2D" parent="Dolla" unique_id=1723967395]
+script = ExtResource("3_w7pd1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dolla/Area2D" unique_id=1348228026]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_c701k")

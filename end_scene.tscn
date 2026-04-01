@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://brjd3ywapbbw1"]
+
+[ext_resource type="Script" uid="uid://boq5meuw43dac" path="res://end_scene.gd" id="1_3wcc1"]
+
+[node name="EndScene" type="CanvasLayer" unique_id=391063931]
+script = ExtResource("1_3wcc1")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=25662504]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.056291588, 0.056291603, 0.056291595, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=549851885]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer" unique_id=892502101]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "YOU MADE IT TO THE BANK... "
+
+[node name="Label2" type="Label" parent="ColorRect/VBoxContainer" unique_id=1741918822]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Press Enter to continue..."
+
+[node name="EndMessage" type="Label" parent="ColorRect/VBoxContainer" unique_id=1693389038]
+z_index = 2
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="ColorRect/VBoxContainer" unique_id=1004927470]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 6
